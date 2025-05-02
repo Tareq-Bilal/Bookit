@@ -5,6 +5,8 @@
 ---
 
 ## 🚀 Features
+## 🚀 Features
+## 🚀 Features
 
 ✅ **Inventory Management**  
 Track books, authors, genres, and multiple copies with full lifecycle support.
