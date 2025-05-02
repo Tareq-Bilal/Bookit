@@ -58,3 +58,13 @@ Bookit is built with a clean, maintainable architecture and modern .NET practice
    ```bash
    git clone https://github.com/your-username/Bookit.git
    cd Bookit
+
+2.Set up the database
+
+Configure your connection string in appsettings.json
+Run the project
+
+
+3.Run migrations:
+  ```bash
+dotnet ef database update
