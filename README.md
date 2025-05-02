@@ -2,8 +2,6 @@
 
 **Bookit** is a powerful and modern library management system designed to simplify book tracking, user management, and lending workflows. Built with **C# and .NET**, it offers an elegant and efficient platform for libraries of any size to digitize their operations and improve member engagement.
 
-![Bookit Banner](https://via.placeholder.com/1200x300?text=Bookit+-+Modern+Library+Management+System)
-
 ---
 
 ## 🚀 Features
