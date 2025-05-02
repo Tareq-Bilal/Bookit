@@ -70,16 +70,13 @@ Bookit is built with a clean, maintainable architecture and modern .NET practice
    ```bash
    dotnet run
 
-📄 License
+## 📄 License
 This project is open-source and available under the MIT License.
-🙌 Contributing
+
+## 🙌 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
 
-🔗 Links
-📘 Documentation (coming soon)
+## 🛠️ Issues & Feature Requests: GitHub Issues
 
-🛠️ Issues & Feature Requests: GitHub Issues
 
-🌐 Live Demo: coming soon
-
-Crafted with ❤️ by Tareq Bilal
+## Crafted with ❤️ by Tareq Bilal
