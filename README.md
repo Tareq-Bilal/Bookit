@@ -60,9 +60,9 @@ Bookit is built with a clean, maintainable architecture and modern .NET practice
    cd Bookit
 
 2. **Set up the database**
-
-Configure your connection string in appsettings.json
-Run migrations:
    ```bash
-dotnet ef database update
+   dotnet ef database update
 
+3. **Run the projec**
+   ```bash
+   dotnet run
