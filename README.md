@@ -65,7 +65,7 @@ Bookit is built with a clean, maintainable architecture and modern .NET practice
    ```bash
    dotnet ef database update
 
-5. **Run the projec**
+5. **Run the project**
    
    ```bash
    dotnet run
