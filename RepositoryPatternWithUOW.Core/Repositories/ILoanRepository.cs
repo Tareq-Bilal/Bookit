@@ -10,5 +10,6 @@ namespace RepositoryPatternWithUOW.Core.Repositories
     public interface ILoanRepository : IBaseRepository<Loan> 
     {
         public Task<IEnumerable<Loan>> GetLoansInDeatils();
+
     }
 }

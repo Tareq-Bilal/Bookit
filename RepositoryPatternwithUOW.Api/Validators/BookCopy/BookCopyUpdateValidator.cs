@@ -19,7 +19,7 @@ namespace RepositoryPatternwithUOW.Api.Validators.BookCopy
         }
         private bool _IsValidStatus(string status)
         {
-            return BookCopyStatus.Status.Any(s => s == status) ? true : false;
+            return BookCopyStatus.Statuses.Any(s => s == status) ? true : false;
         }
 
     }

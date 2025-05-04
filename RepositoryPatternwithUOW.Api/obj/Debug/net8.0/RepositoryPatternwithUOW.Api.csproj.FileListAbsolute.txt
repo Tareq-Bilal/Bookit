@@ -148,3 +148,4 @@ D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwi
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.genruntimeconfig.cache
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\ref\RepositoryPatternwithUOW.Api.dll
 D:\Repository Pattern Using EF Core\RepositoryPatternWithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Repository Pattern Using EF Core\RepositoryPatternWithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.sourcelink.json

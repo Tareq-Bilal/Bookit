@@ -17,6 +17,10 @@ namespace RepositoryPatternwithUOW.Api.Mappings
                 opt => opt.MapFrom(src => src.User != null ? src.User.Name : string.Empty))
                 .ReverseMap();
 
+            CreateMap<Loan, LoanAddDTO>().ReverseMap();
+            
+            CreateMap<Loan, LoanUpdateDTO>().ReverseMap();
+
 
         }
     }

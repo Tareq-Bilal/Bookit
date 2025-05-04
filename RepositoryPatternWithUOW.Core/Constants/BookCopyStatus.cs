@@ -9,6 +9,8 @@ namespace RepositoryPatternWithUOW.Core.Constants
 
      public static class BookCopyStatus
     {
-        public static List<string> Status { get; } = new List<string> { "Available", "Loaned", "Lost" };
+        public enum enStatus { Available, Loaned, Lost }
+        public static List<string> Statuses { get; } = new List<string> { "Available", "Loaned", "Lost" };
+        public static enStatus Status { get; }
     }
 }

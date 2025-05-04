@@ -15,3 +15,4 @@ D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWi
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.EF\obj\Debug\net8.0\RepositoryPatternWithUOW.EF.pdb
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.EF\obj\Debug\net8.0\RepositoryPatternWithUOW.EF.genruntimeconfig.cache
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.EF\obj\Debug\net8.0\ref\RepositoryPatternWithUOW.EF.dll
+D:\Repository Pattern Using EF Core\RepositoryPatternWithUOW\RepositoryPatternWithUOW.EF\obj\Debug\net8.0\RepositoryPatternWithUOW.EF.sourcelink.json

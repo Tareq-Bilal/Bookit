@@ -8,6 +8,9 @@ namespace RepositoryPatternWithUOW.Core.Constants
 {
     public static class LoanStatus
     {
-        public static List<string> Status { get; } = new List<string> { "Active", "Returned", "Overdue" };
+        public enum enStatus { Active , Returned , Overdue }
+        public static List<string> Statuses { get; } = new List<string> { "Active", "Returned", "Overdue" };
+        public static enStatus Status { get; }
+    
     }
 }

@@ -17,6 +17,7 @@ using RepositoryPatternwithUOW.Api.DTO_s.User;
 using RepositoryPatternwithUOW.Api.Validators.User;
 using RepositoryPatternwithUOW.Api.DTO_s.Publisher;
 using RepositoryPatternwithUOW.Api.Validators.Publisher;
+using RepositoryPatternwithUOW.Api.Validators.Loan;
 
 namespace RepositoryPatternwithUOW.Api
 {
@@ -53,6 +54,8 @@ namespace RepositoryPatternwithUOW.Api
                 fv.RegisterValidatorsFromAssemblyContaining<UserUpdateDTOValidator>();
                 fv.RegisterValidatorsFromAssemblyContaining<PublisherAddDTOValidator>();
                 fv.RegisterValidatorsFromAssemblyContaining<PublisherUpdateDTOValidator>();
+                fv.RegisterValidatorsFromAssemblyContaining<LoanAddValidator>();
+                fv.RegisterValidatorsFromAssemblyContaining<LoanUpdateValidator>();
             });
 
             //builder.Services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
