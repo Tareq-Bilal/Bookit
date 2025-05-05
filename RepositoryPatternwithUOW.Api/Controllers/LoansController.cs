@@ -9,6 +9,7 @@ using RepositoryPatternwithUOW.Api.Validators.BookCopy;
 using RepositoryPatternWithUOW.Core;
 using RepositoryPatternWithUOW.Core.Models;
 using RepositoryPatternWithUOW.Core.Constants;
+using System;
 
 namespace RepositoryPatternwithUOW.Api.Controllers
 {
@@ -80,6 +81,20 @@ namespace RepositoryPatternwithUOW.Api.Controllers
                 return NotFound();
 
             var dto = _mapper.Map<LoanGetDTO>(loan);
+            return Ok(dto);
+        }
+
+        [HttpGet("GetUserLoans/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetUserLoansAsync(int id)
+        {
+            var userLoans = await _unitOfWork.Loans.FindAllAsync(l => l.UserId == id, new[] { "User", "Book" });
+
+            if (userLoans == null)
+                return NotFound($"Not Found Loans For User With ID \"{id}\"");
+
+            var dto = _mapper.Map<List<LoanGetDTO>>(userLoans);
             return Ok(dto);
         }
 
@@ -191,6 +206,78 @@ namespace RepositoryPatternwithUOW.Api.Controllers
             }
         }
 
+        //[HttpPost("return/{loanId}")]
+        //[ProducesResponseType(StatusCodes.Status200OK)]
+        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
+        //[ProducesResponseType(StatusCodes.Status404NotFound)]
+        //public async Task<IActionResult> ReturnBook(int loanId, [FromBody] BookReturnDto returnDto)
+        //{
+        //    try
+        //    {
+        //        // Check if loan exists
+        //        var loan = await _unitOfWork.Loans.GetByIdAsync(loanId);
+        //        if (loan == null)
+        //            return NotFound($"Loan with ID {loanId} not found");
+
+        //        // Check if loan is already returned
+        //        if (loan.ReturnDate.HasValue)
+        //            return BadRequest("This book has already been returned");
+
+        //        // Process the return
+        //        var result = await _bookService.ProcessBookReturnAsync(loanId, returnDto);
+
+        //        if (result.IsSuccess)
+        //            return Ok(result.Data);
+        //        else
+        //            return BadRequest(result.Message);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Log exception
+        //        return StatusCode(500, "An error occurred while processing the book return");
+        //    }
+        //}
+
+        [HttpGet("GetLoansByStatus")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetLoansByStatusAsync([FromQuery]string status = "Active")
+        {
+
+            if (!LoanStatus.Statuses.Contains(status))
+                return BadRequest("Please Enter Valid Status ! , {\"Active\", \"Returned\", \"Overdue\"}");
+
+            var loans = await _unitOfWork.Loans
+                .FindAllAsync( l => l.Status == status , new[] { "User", "Book" });
+
+            if (loans == null)
+                return NotFound($"Not Found Loans With Status \"{status}\"");
+
+            var dto = _mapper.Map<List<LoanGetDTO>>(loans);
+            return Ok(dto);
+        }
+
+        [HttpGet("GetLoansByBook/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetLoansByBookAsync(int id)
+        {
+
+            if(await _unitOfWork.Books.GetByIdAsync(id) == null)
+                return NotFound($"Not Found Book With ID {id} ");
+
+
+            var loans = await _unitOfWork.Loans
+                .FindAllAsync(l => l.BookId == id , new[] { "User", "Book" });
+
+            if (loans == null || loans.Count() == 0)
+                return NotFound($"Not Found Loans For Book with ID \"{id}\"");
+
+            var dto = _mapper.Map<List<LoanGetDTO>>(loans);
+            return Ok(dto);
+        }
 
 
     }
