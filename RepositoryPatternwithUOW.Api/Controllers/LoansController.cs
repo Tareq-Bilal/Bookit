@@ -279,6 +279,29 @@ namespace RepositoryPatternwithUOW.Api.Controllers
             return Ok(dto);
         }
 
+        [HttpGet("GetLoansFromTo/{From}/{To}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetLoansFromToAsync(DateOnly From, DateOnly To)
+        {
+            if (From == null || To == null)
+                return NotFound("From & To Is Required !");
+
+            if (From.CompareTo(To) > 0)
+                return BadRequest("From Date Should Be Eralier Than To ");
+
+            var loans = await _unitOfWork.Loans
+                .FindAllAsync(c =>
+                DateOnly.FromDateTime(c.BorrowDate) >= From && DateOnly.FromDateTime(c.BorrowDate) <= To);
+
+            if (loans == null || loans.Count() == 0)
+                return NotFound($"Not Found Loans Added From \"{From}\" To \"{To}\"");
+
+            var dto = _mapper.Map<List<LoanGetDTO>>(loans);
+            return Ok(dto);
+
+        }
 
     }
 }

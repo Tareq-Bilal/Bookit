@@ -1576,6 +1576,51 @@
   },
   {
     "ContainingType": "RepositoryPatternwithUOW.Api.Controllers.LoansController",
+    "Method": "GetLoansFromToAsync",
+    "RelativePath": "api/Loans/GetLoansFromTo/{From}/{To}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "From",
+        "Type": "System.DateOnly",
+        "IsRequired": true
+      },
+      {
+        "Name": "To",
+        "Type": "System.DateOnly",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "RepositoryPatternwithUOW.Api.Controllers.LoansController",
     "Method": "GetWithDetails",
     "RelativePath": "api/Loans/GetLoansWithDetails",
     "HttpMethod": "GET",
