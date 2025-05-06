@@ -18,6 +18,7 @@ namespace RepositoryPatternWithUOW.Core
         IPublisherRepository Publishers { get; }
         IUserRepository Users { get; }
         ILoanRepository Loans { get; }
+        ITransactionReposirtory Transactions { get; }
         int Complete();
         Task<int> CompleteAsync();
 

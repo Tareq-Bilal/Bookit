@@ -21,18 +21,19 @@ namespace RepositoryPatternWithUOW.EF
         public IPublisherRepository Publishers { get; private set; }
         public IUserRepository Users { get; private set; }
         public ILoanRepository Loans { get; private set; }
+        public ITransactionReposirtory Transactions { get; private set; }
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
 
-            Authors    = new BaseRepository<Author>(_context);
-            Books      = new BooksRepository(_context);
-            BookCopies = new BookCopyRepositroy(_context);
-            Categories = new CategoryRepository(_context);
-            Publishers = new PublisherRepository(_context);
-            Users      = new UserRepository(_context);
-            Loans      = new LoanRepository(_context);
-
+            Authors      = new BaseRepository<Author>(_context);
+            Books        = new BooksRepository(_context);
+            BookCopies   = new BookCopyRepositroy(_context);
+            Categories   = new CategoryRepository(_context);
+            Publishers   = new PublisherRepository(_context);
+            Users        = new UserRepository(_context);
+            Loans        = new LoanRepository(_context);
+            Transactions = new TransactionRepository(_context);
         }
         public async Task<int> SaveAsync() => await _context.SaveChangesAsync();
 

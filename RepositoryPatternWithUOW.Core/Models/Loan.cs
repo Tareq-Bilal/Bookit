@@ -25,6 +25,7 @@ namespace RepositoryPatternWithUOW.Core.Models
         public Book Book { get; set; }
         public User User { get; set; }
         public BookCopy BookCopy { get; set; }
+        public ICollection<Transaction> Transactions { get; set; }
 
     }
 }

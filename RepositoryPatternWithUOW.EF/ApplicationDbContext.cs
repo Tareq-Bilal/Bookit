@@ -23,6 +23,7 @@ namespace RepositoryPatternWithUOW.EF
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Loan> Loans { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -55,7 +56,20 @@ namespace RepositoryPatternWithUOW.EF
                 .HasForeignKey(l => l.BookCopyId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<Transaction>()
+                .HasOne(t => t.User)
+                .WithMany(u => u.Transactions)
+                .HasForeignKey(t => t.UserId)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Restrict); 
 
+            // Loan-Transaction relationship (optional)
+            modelBuilder.Entity<Transaction>()
+                .HasOne(t => t.Loan)
+                .WithMany(l => l.Transactions) // Assuming you added this collection to Loan
+                .HasForeignKey(t => t.LoanId)
+                .IsRequired(false) // Makes this relationship optional
+                .OnDelete(DeleteBehavior.SetNull);
 
         }
     }

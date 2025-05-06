@@ -268,7 +268,6 @@ namespace RepositoryPatternwithUOW.Api.Controllers
             if(await _unitOfWork.Books.GetByIdAsync(id) == null)
                 return NotFound($"Not Found Book With ID {id} ");
 
-
             var loans = await _unitOfWork.Loans
                 .FindAllAsync(l => l.BookId == id , new[] { "User", "Book" });
 
@@ -277,6 +276,7 @@ namespace RepositoryPatternwithUOW.Api.Controllers
 
             var dto = _mapper.Map<List<LoanGetDTO>>(loans);
             return Ok(dto);
+
         }
 
         [HttpGet("GetLoansFromTo/{From}/{To}")]

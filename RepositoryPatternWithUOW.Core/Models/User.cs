@@ -24,7 +24,7 @@ namespace RepositoryPatternWithUOW.Core.Models
         // Navigation properties
         public ICollection<Loan> Loans { get; set; }
         //public ICollection<Review> Reviews { get; set; }  
-        //public ICollection<Transaction> Transactions { get; set; }
+        public ICollection<Transaction> Transactions { get; set; }
         //public ICollection<Wishlist> Wishlists { get; set; }
     }
 }
