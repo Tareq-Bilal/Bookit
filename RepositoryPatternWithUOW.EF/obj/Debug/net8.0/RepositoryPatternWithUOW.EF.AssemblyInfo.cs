@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RepositoryPatternWithUOW.EF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a4b1a1b9838d36401ec7335db2bb7e9c4c477b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+940ad76d6e993b90f13aba0934d1bb4ffc6437c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("RepositoryPatternWithUOW.EF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RepositoryPatternWithUOW.EF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
