@@ -8,10 +8,10 @@ namespace RepositoryPatternwithUOW.Api.DTO_s.Loan
         public int BookId { get; set; }
         public int UserId { get; set; }
         public int BookCopyId { get; set; }
-        public DateTime BorrowDate { get; set; }
-        public DateTime DueDate { get; set; }
-        public DateTime? ReturnDate { get; set; }
-        public string Status { get; set; } = LoanStatus.Statuses.First();
+        public DateTime BorrowDate { get; set; } = DateTime.Now;
+        public DateTime DueDate { get; set; } = DateTime.Now.AddDays(1);
+        public DateTime? ReturnDate { get; set; } = null;
+        public string Status { get; set; } = LoanStatus.enStatus.Active.ToString();
 
     }
 }

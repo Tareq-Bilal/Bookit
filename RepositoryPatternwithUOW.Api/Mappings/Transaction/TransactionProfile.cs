@@ -24,6 +24,7 @@ namespace RepositoryPatternwithUOW.Api.Mappings
 
             CreateMap<Transaction, TransactionUpdateDTO>().ReverseMap();
 
+
         }
     }
 }

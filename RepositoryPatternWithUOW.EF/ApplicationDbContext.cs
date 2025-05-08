@@ -24,7 +24,7 @@ namespace RepositoryPatternWithUOW.EF
         public DbSet<User> Users { get; set; }
         public DbSet<Loan> Loans { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
-
+        public DbSet<Settings> Settings { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Basic relationships configuration

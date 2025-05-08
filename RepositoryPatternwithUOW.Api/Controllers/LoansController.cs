@@ -10,6 +10,8 @@ using RepositoryPatternWithUOW.Core;
 using RepositoryPatternWithUOW.Core.Models;
 using RepositoryPatternWithUOW.Core.Constants;
 using System;
+using RepositoryPatternWithUOW.EF;
+using RepositoryPatternwithUOW.Api.DTO_s.Transaction;
 
 namespace RepositoryPatternwithUOW.Api.Controllers
 {
@@ -21,16 +23,19 @@ namespace RepositoryPatternwithUOW.Api.Controllers
         private readonly IMapper _mapper;
         private readonly IValidator<LoanAddDTO>    _loanAddValidator;
         private readonly IValidator<LoanUpdateDTO> _loanUpdateValidator;
+        private readonly IValidator<BookCopyReturnDTO> _bookCopyReturnValidator;
         public LoansController(
             IUnitOfWork unitOfWork,
             IMapper mapper,
             IValidator<LoanAddDTO> loanAddValidator,
-            IValidator<LoanUpdateDTO> loanUpdateValidator)
+            IValidator<LoanUpdateDTO> loanUpdateValidator,
+            IValidator<BookCopyReturnDTO> bookCopyReturnValidator)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _loanAddValidator = loanAddValidator;
             _loanUpdateValidator = loanUpdateValidator;
+            _bookCopyReturnValidator = bookCopyReturnValidator;
         }
 
         [HttpGet("All")]
@@ -99,7 +104,7 @@ namespace RepositoryPatternwithUOW.Api.Controllers
         }
 
         // CREATE
-        [HttpPost]
+        [HttpPost("Add")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -206,37 +211,51 @@ namespace RepositoryPatternwithUOW.Api.Controllers
             }
         }
 
-        //[HttpPost("return/{loanId}")]
-        //[ProducesResponseType(StatusCodes.Status200OK)]
-        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
-        //[ProducesResponseType(StatusCodes.Status404NotFound)]
-        //public async Task<IActionResult> ReturnBook(int loanId, [FromBody] BookReturnDto returnDto)
-        //{
-        //    try
-        //    {
-        //        // Check if loan exists
-        //        var loan = await _unitOfWork.Loans.GetByIdAsync(loanId);
-        //        if (loan == null)
-        //            return NotFound($"Loan with ID {loanId} not found");
+        [HttpPost("Return/{loanId}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> ReturnBook(int loanId, [FromBody] BookCopyReturnDTO returnDto)
+        {
+            try
+            {
 
-        //        // Check if loan is already returned
-        //        if (loan.ReturnDate.HasValue)
-        //            return BadRequest("This book has already been returned");
+                // Check if loan exists
+                var loan = await _unitOfWork.Loans.GetByIdAsync(loanId);
+                if (loan == null)
+                    return NotFound($"Loan with ID {loanId} not found");
 
-        //        // Process the return
-        //        var result = await _bookService.ProcessBookReturnAsync(loanId, returnDto);
+                var validationResult = _bookCopyReturnValidator.Validate(returnDto);
+                if (!validationResult.IsValid)
+                    return BadRequest(validationResult.Errors);
+                // Check if loan is already returned
+                if (loan.ReturnDate.HasValue)
+                    return BadRequest("This book has already been returned");
 
-        //        if (result.IsSuccess)
-        //            return Ok(result.Data);
-        //        else
-        //            return BadRequest(result.Message);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Log exception
-        //        return StatusCode(500, "An error occurred while processing the book return");
-        //    }
-        //}
+                // Process the return
+                var coreDto = new RepositoryPatternWithUOW.Core.Repositories.BookCopyReturnDTO
+                {
+                    Condition = returnDto.Condition,
+                    Notes = returnDto.Notes,
+                    ReturnDate = returnDto.ReturnDate,
+                    AdditionalCharges = returnDto.AdditionalCharges
+                    // map other properties
+                };
+
+                var transactoin =  await _unitOfWork.Loans.ProcessBookReturnAsync(loanId, coreDto , _unitOfWork);
+
+                var transactoinDto = _mapper.Map<TransactionGetDTO>(transactoin);
+
+                return Ok(transactoinDto);
+
+
+            }
+            catch (Exception ex)
+            {
+                // Log exception
+                return StatusCode(500, "An error occurred while processing the book return");
+            }
+        }
 
         [HttpGet("GetLoansByStatus")]
         [ProducesResponseType(StatusCodes.Status200OK)]

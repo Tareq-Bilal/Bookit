@@ -9,5 +9,9 @@ namespace RepositoryPatternWithUOW.Core.Repositories
 {
     public interface ITransactionReposirtory : IBaseRepository<Transaction>
     {
+        Task<decimal> GetTotalTransactionsAmountAsync();
+        Task<Dictionary<string, int>> CountByTypeAsync();
+        Task<Dictionary<string, decimal>> AmountByTypeAsync();
+
     }
 }

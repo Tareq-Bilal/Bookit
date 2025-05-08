@@ -68,13 +68,20 @@ namespace RepositoryPatternwithUOW.Api.Controllers
         /// <summary>
         /// Gets transactions summary data
         /// </summary>
-        //[HttpGet("summary")]
-        //[ProducesResponseType(StatusCodes.Status200OK)]
-        //public async Task<ActionResult<TransactionSummaryDto>> GetSummary([FromQuery] TransactionFilterDto filterDto)
-        //{
-        //    var summary = await _transactionService.GetTransactionSummaryAsync(filterDto);
-        //    return Ok(summary);
-        //}
+        [HttpGet("Summary")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<TransactionSummaryDTO>> GetSummary()
+        {
+            TransactionSummaryDTO dto = new TransactionSummaryDTO();
+
+            dto.TotalCount   = await _unitOfWork.Transactions.Count();
+            dto.TotalAmount  = await _unitOfWork.Transactions.GetTotalTransactionsAmountAsync();
+            dto.AmountByType = await _unitOfWork.Transactions.AmountByTypeAsync();
+            dto.CountByType  = await _unitOfWork.Transactions.CountByTypeAsync();
+
+            return Ok(dto);
+
+        }
 
         /// <summary>
         /// Gets all transactions for a specific user
@@ -210,6 +217,46 @@ namespace RepositoryPatternwithUOW.Api.Controllers
 
         }
 
+        [HttpGet("GetAllByTransactionType")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<IEnumerable<TransactionGetDTO>>> GetAllByTransactionType([FromQuery] string type = "Fine")
+        {
+            if (!TransactionType.TransactionTypes.Contains(type))
+                return NotFound($"Not Found Transaction Type \"{type}\" , " +
+                                    $"Choose on of valid types [Fee, Fine, Damage, Refund]");
+                                                                 
+            var transactions = await _unitOfWork.Transactions.FindAllAsync(t => t.TransactionType == type);
+
+            if (transactions == null || transactions.Count() == 0)
+                return NotFound($"Not Found Transactoins with type \"{type}\"");
+
+            var dto = _mapper.Map<List<TransactionGetDTO>>(transactions);
+            return Ok(dto);
+        }
+
+        [HttpGet("GetTransactionsFromTo/{From}/{To}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetTransactionsFromTo(DateOnly From, DateOnly To)
+        {
+            if (From == null || To == null)
+                return NotFound("From & To Is Required !");
+
+            if (From.CompareTo(To) > 0)
+                return BadRequest("From Date Should Be Eralier Than To ");
+
+            var transactions = await _unitOfWork.Transactions
+                .FindAllAsync(c =>
+                DateOnly.FromDateTime(c.TransactionDate) >= From && DateOnly.FromDateTime(c.TransactionDate) <= To);
+
+            if (transactions == null || transactions.Count() == 0)
+                return NotFound($"Not Found Transactions Added From \"{From}\" To \"{To}\"");
+
+            var dto = _mapper.Map<List<TransactionGetDTO>>(transactions);
+            return Ok(dto);
+
+        }
 
 
     }

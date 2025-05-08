@@ -4,6 +4,7 @@ namespace RepositoryPatternwithUOW.Api.DTO_s.Loan
 {
     public class LoanGetDTO
     {
+        public int Id { get; set; }
         public int BookId { get; set; }
         public string BookTitle { get; set; }
         public int UserId { get; set; }
