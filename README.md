@@ -104,6 +104,14 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ![Category](https://github.com/user-attachments/assets/cdfa21f9-a6c7-4372-b115-db840c36acc4)
 
+### 🔹Loans
+
+![Loans](https://github.com/user-attachments/assets/a719160d-ac5c-4d61-8a6f-eb337726d455)
+
+### 🔹Transactions
+
+![Transactions](https://github.com/user-attachments/assets/c4d040c8-fc98-4f9b-886b-b30bff9eb73a)
+
 ### 🔹User
 
 ![User](https://github.com/user-attachments/assets/45b0dbda-dc15-42ed-8d62-d90f3857aa55)
