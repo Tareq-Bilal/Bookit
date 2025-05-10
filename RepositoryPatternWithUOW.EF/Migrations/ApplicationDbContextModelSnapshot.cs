@@ -174,15 +174,12 @@ namespace RepositoryPatternWithUOW.EF.Migrations
 
                     b.Property<string>("Key")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(60)
+                        .HasColumnType("nvarchar(60)");
 
-                    b.Property<string>("Value")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ValueType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("Value")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -198,6 +195,7 @@ namespace RepositoryPatternWithUOW.EF.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<decimal>("Amount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int?>("BookId")
@@ -259,6 +257,33 @@ namespace RepositoryPatternWithUOW.EF.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("RepositoryPatternWithUOW.Core.Models.Wishlist", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("AddedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("UserId", "BookId")
+                        .IsUnique();
+
+                    b.ToTable("Wishlists");
                 });
 
             modelBuilder.Entity("RepositoryPatternWithUOW.EF.Author", b =>
@@ -373,11 +398,32 @@ namespace RepositoryPatternWithUOW.EF.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("RepositoryPatternWithUOW.Core.Models.Wishlist", b =>
+                {
+                    b.HasOne("RepositoryPatternWithUOW.Core.Models.Book", "Book")
+                        .WithMany("Wishlists")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RepositoryPatternWithUOW.Core.Models.User", "User")
+                        .WithMany("WishlistItems")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("RepositoryPatternWithUOW.Core.Models.Book", b =>
                 {
                     b.Navigation("BookCopies");
 
                     b.Navigation("Loans");
+
+                    b.Navigation("Wishlists");
                 });
 
             modelBuilder.Entity("RepositoryPatternWithUOW.Core.Models.BookCopy", b =>
@@ -405,6 +451,8 @@ namespace RepositoryPatternWithUOW.EF.Migrations
                     b.Navigation("Loans");
 
                     b.Navigation("Transactions");
+
+                    b.Navigation("WishlistItems");
                 });
 #pragma warning restore 612, 618
         }

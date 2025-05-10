@@ -16,6 +16,7 @@ namespace RepositoryPatternWithUOW.Core.Repositories
 
         Task<T> FindAsync(Expression<Func<T, bool>> criteria , string[] includes = null);
         Task<IEnumerable<T>> FindAllAsync(string[] includes = null);
+        IEnumerable<T> FindAll(string[] includes = null);
         Task<IEnumerable<T>> FindAllAsync(Expression<Func<T, bool>> criteria , string[] includes = null);
         Task<IEnumerable<T>> FindAllWithOrderingAsync(string[] includes = null, 
             Expression <Func<T , object>> orderBy = null , string orderByDirection = OrderBy.Ascending);

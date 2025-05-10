@@ -43,6 +43,16 @@ namespace RepositoryPatternWithUOW.EF.Repositories
             return await query.SingleOrDefaultAsync(criteria);
         }
 
+        public IEnumerable<T> FindAll(string[] includes = null)
+        {
+            IQueryable<T> query = _context.Set<T>();
+
+            if (includes != null)
+                foreach (var include in includes)
+                    query = query.Include(include);
+
+            return query.ToList();
+        }
         public async Task<IEnumerable<T>> FindAllAsync(string[] includes = null)
         {
             IQueryable<T> query = _context.Set<T>();
@@ -137,6 +147,6 @@ namespace RepositoryPatternWithUOW.EF.Repositories
             return await query.CountAsync();
         }
 
-
+        
     }
 }

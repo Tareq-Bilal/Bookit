@@ -4,6 +4,8 @@ D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwi
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.AssemblyInfo.cs
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.csproj.CoreCompileInputs.cache
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.sourcelink.json
+D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.MvcApplicationPartsAssemblyInfo.cs
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\bin\Debug\net8.0\appsettings.Development.json
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\bin\Debug\net8.0\appsettings.json
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\bin\Debug\net8.0\libman.json
@@ -147,4 +149,3 @@ D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwi
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.pdb
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.genruntimeconfig.cache
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\ref\RepositoryPatternwithUOW.Api.dll
-D:\Repository Pattern Using EF Core\RepositoryPatternWithUOW\RepositoryPatternwithUOW.Api\obj\Debug\net8.0\RepositoryPatternwithUOW.Api.sourcelink.json

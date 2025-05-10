@@ -18,6 +18,7 @@ using RepositoryPatternwithUOW.Api.Validators.User;
 using RepositoryPatternwithUOW.Api.DTO_s.Publisher;
 using RepositoryPatternwithUOW.Api.Validators.Publisher;
 using RepositoryPatternwithUOW.Api.Validators.Loan;
+using RepositoryPatternWithUOW.Core.Models;
 
 namespace RepositoryPatternwithUOW.Api
 {
@@ -43,6 +44,8 @@ namespace RepositoryPatternwithUOW.Api
             builder.Services.AddAutoMapper(typeof(UserProfile).Assembly);
             builder.Services.AddAutoMapper(typeof(PublisherProfile).Assembly);
             builder.Services.AddAutoMapper(typeof(LoanProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(TransactionProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(WishlistProfile).Assembly);
 
             builder.Services.AddFluentValidation(fv =>
             {
@@ -56,6 +59,7 @@ namespace RepositoryPatternwithUOW.Api
                 fv.RegisterValidatorsFromAssemblyContaining<PublisherUpdateDTOValidator>();
                 fv.RegisterValidatorsFromAssemblyContaining<LoanAddValidator>();
                 fv.RegisterValidatorsFromAssemblyContaining<LoanUpdateValidator>();
+
             });
 
             //builder.Services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));

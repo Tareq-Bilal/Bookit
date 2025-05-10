@@ -30,6 +30,8 @@ namespace RepositoryPatternWithUOW.Core.Models
 
         public ICollection<BookCopy> BookCopies { get; set; }
         public ICollection<Loan> Loans { get; set; }
+        public ICollection<Wishlist> Wishlists { get; set; }
+
 
     }
 }

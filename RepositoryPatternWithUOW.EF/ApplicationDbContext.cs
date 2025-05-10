@@ -25,6 +25,7 @@ namespace RepositoryPatternWithUOW.EF
         public DbSet<Loan> Loans { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Settings> Settings { get; set; }
+        public DbSet<Wishlist> Wishlists { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Basic relationships configuration
@@ -61,7 +62,7 @@ namespace RepositoryPatternWithUOW.EF
                 .WithMany(u => u.Transactions)
                 .HasForeignKey(t => t.UserId)
                 .IsRequired()
-                .OnDelete(DeleteBehavior.Restrict); 
+                .OnDelete(DeleteBehavior.Restrict);
 
             // Loan-Transaction relationship (optional)
             modelBuilder.Entity<Transaction>()
@@ -70,6 +71,37 @@ namespace RepositoryPatternWithUOW.EF
                 .HasForeignKey(t => t.LoanId)
                 .IsRequired(false) // Makes this relationship optional
                 .OnDelete(DeleteBehavior.SetNull);
+
+            // Fix decimal precision issues
+            modelBuilder.Entity<Settings>()
+                .Property(s => s.Value)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<Transaction>()
+                .Property(t => t.Amount)
+                .HasPrecision(18, 2);
+
+            //modelBuilder.Entity<Wishlist>()
+            //    .HasIndex(w => new { w.UserId, w.BookId })
+            //    .IsUnique();
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.WishlistItems) // assuming you rename it accordingly
+                .WithOne(w => w.User)
+                .HasForeignKey(w => w.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+
+            // One-to-Many: Book can appear in many wishlists (many entries)
+            modelBuilder.Entity<Book>()
+                .HasMany(b => b.Wishlists)
+                .WithOne(w => w.Book)
+                .HasForeignKey(w => w.BookId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Unique constraint to prevent duplicate books in a user's wishlist
+            modelBuilder.Entity<Wishlist>()
+                .HasIndex(w => new { w.UserId, w.BookId })
+                .IsUnique();
 
         }
     }

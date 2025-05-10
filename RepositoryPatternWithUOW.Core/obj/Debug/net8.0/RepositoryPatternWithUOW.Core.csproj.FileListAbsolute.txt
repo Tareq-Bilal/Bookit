@@ -5,8 +5,8 @@ D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWi
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\RepositoryPatternWithUOW.Core.AssemblyInfoInputs.cache
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\RepositoryPatternWithUOW.Core.AssemblyInfo.cs
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\RepositoryPatternWithUOW.Core.csproj.CoreCompileInputs.cache
+D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\RepositoryPatternWithUOW.Core.sourcelink.json
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\RepositoryPatternWithUOW.Core.dll
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\refint\RepositoryPatternWithUOW.Core.dll
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\RepositoryPatternWithUOW.Core.pdb
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\ref\RepositoryPatternWithUOW.Core.dll
-D:\Repository Pattern Using EF Core\RepositoryPatternWithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\RepositoryPatternWithUOW.Core.sourcelink.json

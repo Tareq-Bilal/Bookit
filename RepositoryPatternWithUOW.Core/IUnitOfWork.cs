@@ -20,6 +20,7 @@ namespace RepositoryPatternWithUOW.Core
         ILoanRepository Loans { get; }
         ITransactionReposirtory Transactions { get; }
         ISettingsRepository Settings { get; }
+        IWishlistRepository Wishlists { get; }
         int Complete();
         Task<int> CompleteAsync();
 

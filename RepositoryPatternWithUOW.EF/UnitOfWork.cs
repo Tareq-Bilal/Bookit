@@ -23,19 +23,21 @@ namespace RepositoryPatternWithUOW.EF
         public ILoanRepository Loans { get; private set; }
         public ITransactionReposirtory Transactions { get; private set; }
         public ISettingsRepository Settings { get; private set; }
+        public IWishlistRepository Wishlists { get; private set; }
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
 
-            Authors      = new BaseRepository<Author>(_context);
-            Books        = new BooksRepository(_context);
-            BookCopies   = new BookCopyRepositroy(_context);
-            Categories   = new CategoryRepository(_context);
-            Publishers   = new PublisherRepository(_context);
-            Users        = new UserRepository(_context);
-            Loans        = new LoanRepository(_context);
-            Transactions = new TransactionRepository(_context);
-            Settings     = new SettingsRepositry(_context);
+            Authors       = new BaseRepository<Author>(_context);
+            Books         = new BooksRepository(_context);
+            BookCopies    = new BookCopyRepositroy(_context);
+            Categories    = new CategoryRepository(_context);
+            Publishers    = new PublisherRepository(_context);
+            Users         = new UserRepository(_context);
+            Loans         = new LoanRepository(_context);
+            Transactions  = new TransactionRepository(_context);
+            Settings      = new SettingsRepositry(_context);
+            Wishlists     = new WishlistRepository(_context);
         }
         public async Task<int> SaveAsync() => await _context.SaveChangesAsync();
 
