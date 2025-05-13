@@ -137,6 +137,11 @@ namespace RepositoryPatternWithUOW.EF.Repositories
         {
             _context.Set<T>().Remove(entity);
         }
+        public async Task<int> DeleteWhereAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().Where(predicate).ExecuteDeleteAsync();
+        }
+
         public async Task<int> Count(Expression<Func<T, bool>> criteria = null)
         {
             IQueryable<T> query = _context.Set<T>();
@@ -147,6 +152,5 @@ namespace RepositoryPatternWithUOW.EF.Repositories
             return await query.CountAsync();
         }
 
-        
     }
 }

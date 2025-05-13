@@ -211,21 +211,21 @@ namespace RepositoryPatternwithUOW.Api.Controllers
         ///// <summary>
         ///// Remove The User's Wishlist
         ///// </summary>
-        //[HttpDelete("DeleteUserReviews/{userId}")]
-        //[ProducesResponseType(StatusCodes.Status200OK)]
-        //[ProducesResponseType(StatusCodes.Status404NotFound)]
-        //public async Task<ActionResult> DeleteUserWishlist(int userId)
-        //{
-        //    var user = await _unitOfWork.Users.GetByIdAsync(userId);
-        //    if (user == null)
-        //        return NotFound($"Not Found User With Id {userId}");
+        [HttpDelete("DeleteUserReviews/{userId}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult> DeleteUserWishlist(int userId)
+        {
+            var user = await _unitOfWork.Users.GetByIdAsync(userId);
+            if (user == null)
+                return NotFound($"Not Found User With Id {userId}");
 
-        //    int deletedCount = await _unitOfWork.Reviews.DeleteWhereAsync(w => w.UserId == userId);
-        //    await _unitOfWork.CompleteAsync();
+            int deletedCount = await _unitOfWork.Reviews.DeleteWhereAsync(w => w.UserId == userId);
+            await _unitOfWork.CompleteAsync();
 
-        //    return Ok($"Wishlist for user \"{user.Name}\" cleared successfully. {deletedCount} items removed.");
+            return Ok($"Wishlist for user \"{user.Name}\" cleared successfully. {deletedCount} items removed.");
 
-        //}
+        }
 
 
     }

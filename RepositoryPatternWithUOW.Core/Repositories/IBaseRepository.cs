@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using RepositoryPatternWithUOW.Core.Constants;
+using RepositoryPatternWithUOW.Core.Models;
 
 namespace RepositoryPatternWithUOW.Core.Repositories
 {
@@ -25,6 +26,8 @@ namespace RepositoryPatternWithUOW.Core.Repositories
         public void Update(T entity);
         Task<T> UpdateAsync(T entity);
         Task DeleteAsync(T entity);
+        public Task<int> DeleteWhereAsync(Expression<Func<T, bool>> predicate);
+
         Task<int> Count(Expression<Func<T, bool>> criteria = null);
 
     }

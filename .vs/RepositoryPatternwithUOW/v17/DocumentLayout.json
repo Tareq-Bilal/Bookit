@@ -7,6 +7,30 @@
       "RelativeMoniker": "D:0:0:{9F4F6233-9DA5-4A8A-9D1C-D275A32C9EB4}|RepositoryPatternwithUOW.Api\\RepositoryPatternwithUOW.Api.csproj|solutionrelative:repositorypatternwithuow.api\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9F4F6233-9DA5-4A8A-9D1C-D275A32C9EB4}|RepositoryPatternwithUOW.Api\\RepositoryPatternwithUOW.Api.csproj|d:\\repository pattern using ef core\\repositorypatternwithuow\\repositorypatternwithuow.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4F6233-9DA5-4A8A-9D1C-D275A32C9EB4}|RepositoryPatternwithUOW.Api\\RepositoryPatternwithUOW.Api.csproj|solutionrelative:repositorypatternwithuow.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0ECBBF-0A75-4D6A-A606-16C64FC03D9A}|RepositoryPatternWithUOW.EF\\RepositoryPatternWithUOW.EF.csproj|d:\\repository pattern using ef core\\repositorypatternwithuow\\repositorypatternwithuow.ef\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0ECBBF-0A75-4D6A-A606-16C64FC03D9A}|RepositoryPatternWithUOW.EF\\RepositoryPatternWithUOW.EF.csproj|solutionrelative:repositorypatternwithuow.ef\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0ECBBF-0A75-4D6A-A606-16C64FC03D9A}|RepositoryPatternWithUOW.EF\\RepositoryPatternWithUOW.EF.csproj|d:\\repository pattern using ef core\\repositorypatternwithuow\\repositorypatternwithuow.ef\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0ECBBF-0A75-4D6A-A606-16C64FC03D9A}|RepositoryPatternWithUOW.EF\\RepositoryPatternWithUOW.EF.csproj|solutionrelative:repositorypatternwithuow.ef\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D25BAB7-E7E4-452F-85DA-881583D3C777}|RepositoryPatternWithUOW.Core\\RepositoryPatternWithUOW.Core.csproj|d:\\repository pattern using ef core\\repositorypatternwithuow\\repositorypatternwithuow.core\\repositories\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D25BAB7-E7E4-452F-85DA-881583D3C777}|RepositoryPatternWithUOW.Core\\RepositoryPatternWithUOW.Core.csproj|solutionrelative:repositorypatternwithuow.core\\repositories\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0ECBBF-0A75-4D6A-A606-16C64FC03D9A}|RepositoryPatternWithUOW.EF\\RepositoryPatternWithUOW.EF.csproj|d:\\repository pattern using ef core\\repositorypatternwithuow\\repositorypatternwithuow.ef\\repositories\\wishlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0ECBBF-0A75-4D6A-A606-16C64FC03D9A}|RepositoryPatternWithUOW.EF\\RepositoryPatternWithUOW.EF.csproj|solutionrelative:repositorypatternwithuow.ef\\repositories\\wishlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D25BAB7-E7E4-452F-85DA-881583D3C777}|RepositoryPatternWithUOW.Core\\RepositoryPatternWithUOW.Core.csproj|d:\\repository pattern using ef core\\repositorypatternwithuow\\repositorypatternwithuow.core\\repositories\\iwishlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D25BAB7-E7E4-452F-85DA-881583D3C777}|RepositoryPatternWithUOW.Core\\RepositoryPatternWithUOW.Core.csproj|solutionrelative:repositorypatternwithuow.core\\repositories\\iwishlistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F4F6233-9DA5-4A8A-9D1C-D275A32C9EB4}|RepositoryPatternwithUOW.Api\\RepositoryPatternwithUOW.Api.csproj|d:\\repository pattern using ef core\\repositorypatternwithuow\\repositorypatternwithuow.api\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F4F6233-9DA5-4A8A-9D1C-D275A32C9EB4}|RepositoryPatternwithUOW.Api\\RepositoryPatternwithUOW.Api.csproj|solutionrelative:repositorypatternwithuow.api\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -117,7 +141,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,19 +150,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WishlistController.cs",
-              "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\WishlistController.cs",
-              "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Controllers\\WishlistController.cs",
-              "ToolTip": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\WishlistController.cs",
-              "RelativeToolTip": "RepositoryPatternwithUOW.Api\\Controllers\\WishlistController.cs",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAAANcAAAAJAAAAAAAAAA==",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "RepositoryPatternwithUOW.Api\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T21:28:31.83Z",
+              "WhenOpened": "2025-05-13T22:09:40.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.EF\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "RepositoryPatternWithUOW.EF\\UnitOfWork.cs",
+              "ToolTip": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.EF\\UnitOfWork.cs",
+              "RelativeToolTip": "RepositoryPatternWithUOW.EF\\UnitOfWork.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T22:09:29.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WishlistRepository.cs",
+              "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.EF\\Repositories\\WishlistRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryPatternWithUOW.EF\\Repositories\\WishlistRepository.cs",
+              "ToolTip": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.EF\\Repositories\\WishlistRepository.cs",
+              "RelativeToolTip": "RepositoryPatternWithUOW.EF\\Repositories\\WishlistRepository.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAuwF0AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T22:08:19.504Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\Repositories\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryPatternWithUOW.Core\\Repositories\\IBaseRepository.cs",
+              "ToolTip": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\Repositories\\IBaseRepository.cs",
+              "RelativeToolTip": "RepositoryPatternWithUOW.Core\\Repositories\\IBaseRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwBwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T22:07:45.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.EF\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryPatternWithUOW.EF\\Repositories\\BaseRepository.cs",
+              "ToolTip": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.EF\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "RepositoryPatternWithUOW.EF\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAywI0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T22:07:09.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IWishlistRepository.cs",
+              "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\Repositories\\IWishlistRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryPatternWithUOW.Core\\Repositories\\IWishlistRepository.cs",
+              "ToolTip": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\Repositories\\IWishlistRepository.cs",
+              "RelativeToolTip": "RepositoryPatternWithUOW.Core\\Repositories\\IWishlistRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T22:07:02.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "WishlistAddDTOValidator.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Validators\\Wishlist\\WishlistAddDTOValidator.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Validators\\Wishlist\\WishlistAddDTOValidator.cs",
@@ -151,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "ReviewUpdateDTO.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\DTO\u0027s\\Review\\ReviewUpdateDTO.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\DTO\u0027s\\Review\\ReviewUpdateDTO.cs",
@@ -164,7 +253,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Controllers\\ReviewController.cs",
+              "ToolTip": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "RepositoryPatternwithUOW.Api\\Controllers\\ReviewController.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAiwOMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:12:05.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WishlistController.cs",
+              "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\WishlistController.cs",
+              "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Controllers\\WishlistController.cs",
+              "ToolTip": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\WishlistController.cs",
+              "RelativeToolTip": "RepositoryPatternwithUOW.Api\\Controllers\\WishlistController.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAAANcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:28:31.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ReviewAddDTO.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\DTO\u0027s\\Review\\ReviewAddDTO.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\DTO\u0027s\\Review\\ReviewAddDTO.cs",
@@ -177,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "ReviewUpdateDTOValidator.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Validators\\Review\\ReviewUpdateDTOValidator.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Validators\\Review\\ReviewUpdateDTOValidator.cs",
@@ -190,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "ReviewAddDTOValidator.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Validators\\Review\\ReviewAddDTOValidator.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Validators\\Review\\ReviewAddDTOValidator.cs",
@@ -203,20 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReviewController.cs",
-              "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\ReviewController.cs",
-              "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Controllers\\ReviewController.cs",
-              "ToolTip": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\ReviewController.cs",
-              "RelativeToolTip": "RepositoryPatternwithUOW.Api\\Controllers\\ReviewController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAiwGIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T21:12:05.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "ReviewGetDTO.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\DTO\u0027s\\Review\\ReviewGetDTO.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\DTO\u0027s\\Review\\ReviewGetDTO.cs",
@@ -229,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "ReviewProfile.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Mappings\\Review\\ReviewProfile.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Mappings\\Review\\ReviewProfile.cs",
@@ -242,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Review.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\Models\\Review.cs",
               "RelativeDocumentMoniker": "RepositoryPatternWithUOW.Core\\Models\\Review.cs",
@@ -255,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "UserAddDTOValidator.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Validators\\User\\UserAddDTOValidator.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Validators\\User\\UserAddDTOValidator.cs",
@@ -268,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "TransactionsController.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Controllers\\TransactionsController.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Controllers\\TransactionsController.cs",
@@ -281,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "BookUpdateDTOValidator.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\Validators\\Book\\BookUpdateDTOValidator.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\Validators\\Book\\BookUpdateDTOValidator.cs",
@@ -293,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "LoanAddDTO.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\DTO\u0027s\\Loan\\LoanAddDTO.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\DTO\u0027s\\Loan\\LoanAddDTO.cs",
@@ -305,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "LoanGetDTO.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\DTO\u0027s\\Loan\\LoanGetDTO.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\DTO\u0027s\\Loan\\LoanGetDTO.cs",
@@ -317,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "ITransactionReposirtory.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\Repositories\\ITransactionReposirtory.cs",
               "RelativeDocumentMoniker": "RepositoryPatternWithUOW.Core\\Repositories\\ITransactionReposirtory.cs",
@@ -329,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "TransactionType.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\Constants\\TransactionType.cs",
               "RelativeDocumentMoniker": "RepositoryPatternWithUOW.Core\\Constants\\TransactionType.cs",
@@ -341,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "BookCopyStatus.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\Constants\\BookCopyStatus.cs",
               "RelativeDocumentMoniker": "RepositoryPatternWithUOW.Core\\Constants\\BookCopyStatus.cs",
@@ -353,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "LoanStatus.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\Constants\\LoanStatus.cs",
               "RelativeDocumentMoniker": "RepositoryPatternWithUOW.Core\\Constants\\LoanStatus.cs",
@@ -365,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.EF\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "RepositoryPatternWithUOW.EF\\Repositories\\UserRepository.cs",
@@ -377,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "PublisherRepository.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.EF\\Repositories\\PublisherRepository.cs",
               "RelativeDocumentMoniker": "RepositoryPatternWithUOW.EF\\Repositories\\PublisherRepository.cs",
@@ -389,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "IPublisherRepository.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\Repositories\\IPublisherRepository.cs",
               "RelativeDocumentMoniker": "RepositoryPatternWithUOW.Core\\Repositories\\IPublisherRepository.cs",
@@ -401,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "BookCopyUpdateDTO.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\DTO\u0027s\\BookCopy\\BookCopyUpdateDTO.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\DTO\u0027s\\BookCopy\\BookCopyUpdateDTO.cs",
@@ -413,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "TransactionSummaryDTO.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternwithUOW.Api\\DTO\u0027s\\Transaction\\TransactionSummaryDTO.cs",
               "RelativeDocumentMoniker": "RepositoryPatternwithUOW.Api\\DTO\u0027s\\Transaction\\TransactionSummaryDTO.cs",
@@ -425,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "20250509162711_AddWishlistTable.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.EF\\Migrations\\20250509162711_AddWishlistTable.cs",
               "RelativeDocumentMoniker": "RepositoryPatternWithUOW.EF\\Migrations\\20250509162711_AddWishlistTable.cs",
@@ -436,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "20250509162546_AddWishlistTable.cs",
               "DocumentMoniker": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.EF\\Migrations\\20250509162546_AddWishlistTable.cs",
               "RelativeDocumentMoniker": "RepositoryPatternWithUOW.EF\\Migrations\\20250509162546_AddWishlistTable.cs",
@@ -447,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "dbo.Settings.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RepositoryPattern/True/SqlTable/dbo.Settings.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RepositoryPattern/True/SqlTable/dbo.Settings.sql",
