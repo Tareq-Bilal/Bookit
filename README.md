@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📚 Bookit – Modern Library Management System
 
 **Bookit** is a powerful and modern library management system designed to simplify book tracking, user management, and lending workflows. Built with **C# and .NET**, it offers an elegant and efficient platform for libraries of any size to digitize their operations and improve member engagement.
@@ -111,10 +110,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 
 ## Crafted with ❤️ by Tareq Bilal
-=======
-# 📚 Bookit – Modern Library Management System
-
-**Bookit** is a powerful and modern library management system designed to simplify book tracking, user management, and lending workflows. Built with **C# and .NET**, it offers an elegant and efficient platform for libraries of any size to digitize their operations and improve member engagement.
-
----
 
