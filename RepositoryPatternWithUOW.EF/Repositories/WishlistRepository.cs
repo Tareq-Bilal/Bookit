@@ -4,6 +4,7 @@ using RepositoryPatternWithUOW.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
@@ -77,6 +78,22 @@ namespace RepositoryPatternWithUOW.EF.Repositories
             _context.Wishlists.Remove(wishlistItem);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<Wishlist> GetWishlistWithDetailsAsync(int id)
+        {
+            return await _context.Wishlists
+                         .Include(w => w.User)
+                         .Include(w => w.Book)
+                             .ThenInclude(b => b.Author)
+                         .FirstOrDefaultAsync(w => w.Id == id);
+        }
+        public async Task<int> DeleteWhereAsync(Expression<Func<Wishlist, bool>> predicate)
+        {
+            // This performs the delete operation directly in the database
+            // without loading the entities into memory
+            return await _context.Set<Wishlist>().Where(predicate).ExecuteDeleteAsync();
+        }
+
 
     }
 }

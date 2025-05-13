@@ -11,7 +11,7 @@
         "projectName": "RepositoryPatternWithUOW.Core",
         "projectPath": "D:\\Repository Pattern Using EF Core\\RepositoryPatternWithUOW\\RepositoryPatternWithUOW.Core\\RepositoryPatternWithUOW.Core.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\obj\\",
+        "outputPath": "D:\\Repository Pattern Using EF Core\\RepositoryPatternWithUOW\\RepositoryPatternWithUOW.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

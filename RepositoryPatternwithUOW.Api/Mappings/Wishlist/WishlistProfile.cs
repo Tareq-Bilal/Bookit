@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using RepositoryPatternwithUOW.Api.DTO_s.Wishlist;
+using RepositoryPatternWithUOW.Core;
 using RepositoryPatternWithUOW.Core.Models;
 
 namespace RepositoryPatternwithUOW.Api.Mappings
@@ -29,11 +30,13 @@ namespace RepositoryPatternwithUOW.Api.Mappings
 
             // UpdateWishlistItemDTO -> Wishlist
             CreateMap<WishlistUpdateDTO, Wishlist>()
+                .ForMember(dest => dest.BookId, opt => opt.MapFrom(src => src.BookId))
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
                 .ForMember(dest => dest.UserId, opt => opt.Ignore())
                 .ForMember(dest => dest.AddedDate, opt => opt.Ignore())
                 .ForMember(dest => dest.User, opt => opt.Ignore())
-                .ForMember(dest => dest.Book, opt => opt.Ignore())
-                .ReverseMap();
+                .ForMember(dest => dest.Book, opt => opt.Ignore());
+        
         }
     }
 }

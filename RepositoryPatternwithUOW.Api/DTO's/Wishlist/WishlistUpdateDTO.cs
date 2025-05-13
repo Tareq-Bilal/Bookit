@@ -4,8 +4,6 @@ namespace RepositoryPatternwithUOW.Api.DTO_s.Wishlist
 {
     public class WishlistUpdateDTO
     {
-        [Required]
-        public int Id { get; set; }
 
         // Only allowing update of BookId as UserId should not change
         // (moving an item between users' wishlists would be deletion + creation)
