@@ -11,7 +11,7 @@ namespace RepositoryPatternwithUOW.Api.DTO_s.Review
         public int Rating { get; set; } // 1-5 stars
 
         [MaxLength(300)]
-        public string Comment { get; set; }
+        public string? Comment { get; set; }
         public DateTime ReviewDate { get; set; }
     }
 }
