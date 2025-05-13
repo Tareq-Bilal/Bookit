@@ -21,6 +21,7 @@ namespace RepositoryPatternWithUOW.Core
         ITransactionReposirtory Transactions { get; }
         ISettingsRepository Settings { get; }
         IWishlistRepository Wishlists { get; }
+        IReviewRepository Reviews { get; }
         int Complete();
         Task<int> CompleteAsync();
 

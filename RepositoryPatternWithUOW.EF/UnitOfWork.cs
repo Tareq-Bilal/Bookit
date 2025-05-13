@@ -24,6 +24,7 @@ namespace RepositoryPatternWithUOW.EF
         public ITransactionReposirtory Transactions { get; private set; }
         public ISettingsRepository Settings { get; private set; }
         public IWishlistRepository Wishlists { get; private set; }
+        public IReviewRepository Reviews { get; private set; }
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
@@ -38,6 +39,7 @@ namespace RepositoryPatternWithUOW.EF
             Transactions  = new TransactionRepository(_context);
             Settings      = new SettingsRepositry(_context);
             Wishlists     = new WishlistRepository(_context);
+            Reviews       = new ReviewRepository(_context);
         }
         public async Task<int> SaveAsync() => await _context.SaveChangesAsync();
 

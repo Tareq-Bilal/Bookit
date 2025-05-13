@@ -26,5 +26,7 @@ namespace RepositoryPatternWithUOW.Core.Models
         //public ICollection<Review> Reviews { get; set; }  
         public ICollection<Transaction> Transactions { get; set; }
         public ICollection<Wishlist> WishlistItems { get; set; }
+        public ICollection<Review> Reviews { get; set; }
+
     }
 }

@@ -26,6 +26,7 @@ namespace RepositoryPatternWithUOW.EF
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Settings> Settings { get; set; }
         public DbSet<Wishlist> Wishlists { get; set; }
+        public DbSet<Review> Reviews { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Basic relationships configuration
@@ -81,9 +82,6 @@ namespace RepositoryPatternWithUOW.EF
                 .Property(t => t.Amount)
                 .HasPrecision(18, 2);
 
-            //modelBuilder.Entity<Wishlist>()
-            //    .HasIndex(w => new { w.UserId, w.BookId })
-            //    .IsUnique();
             modelBuilder.Entity<User>()
                 .HasMany(u => u.WishlistItems) // assuming you rename it accordingly
                 .WithOne(w => w.User)
@@ -103,6 +101,15 @@ namespace RepositoryPatternWithUOW.EF
                 .HasIndex(w => new { w.UserId, w.BookId })
                 .IsUnique();
 
+            modelBuilder.Entity<Review>()
+                .HasOne(r => r.User)
+                .WithMany(u => u.Reviews)
+                .HasForeignKey(r => r.UserId);
+
+            modelBuilder.Entity<Review>()
+                .HasOne(r => r.Book)
+                .WithMany(b => b.Reviews)
+                .HasForeignKey(r => r.BookId);
         }
     }
 }
