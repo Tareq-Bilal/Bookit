@@ -120,8 +120,10 @@ namespace RepositoryPatternwithUOW.Api.Controllers
                 if (!validationResult.IsValid)
                     return BadRequest(validationResult.Errors);
 
+                if (await _unitOfWork.Reviews.IsBookReviewdByTheUser(addDTO.UserId, addDTO.BookId))
+                    return BadRequest($"Book {addDTO.BookId} is Alreday Reviewed By The User {addDTO.UserId}");
+
                 var review = _mapper.Map<Review>(addDTO);
-                //var itemDto  = _mapper.Map<WishlistItemDTO>(wishlist);
 
                 await _unitOfWork.Reviews.AddAsync(review);
                 await _unitOfWork.CompleteAsync();

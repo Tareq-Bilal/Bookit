@@ -9,5 +9,7 @@ namespace RepositoryPatternWithUOW.Core.Repositories
 {
     public interface IReviewRepository : IBaseRepository<Review>
     {
+        public Task<bool> IsBookReviewdByTheUser(int userId , int bookId);
+
     }
 }
