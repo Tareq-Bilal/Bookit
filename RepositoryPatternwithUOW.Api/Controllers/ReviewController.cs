@@ -123,6 +123,7 @@ namespace RepositoryPatternwithUOW.Api.Controllers
                 if (!validationResult.IsValid)
                     return BadRequest(validationResult.Errors);
 
+                //Check If The User Has Already Reviwed The Book Or Not
                 if (await _unitOfWork.Reviews.IsBookReviewdByTheUser(addDTO.UserId, addDTO.BookId))
                     return BadRequest($"Book {addDTO.BookId} is Alreday Reviewed By The User {addDTO.UserId}");
 
