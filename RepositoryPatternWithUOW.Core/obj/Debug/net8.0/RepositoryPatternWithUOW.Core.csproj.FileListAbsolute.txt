@@ -10,3 +10,4 @@ D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWi
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\refint\RepositoryPatternWithUOW.Core.dll
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\RepositoryPatternWithUOW.Core.pdb
 D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\ref\RepositoryPatternWithUOW.Core.dll
+D:\Repository Pattern Using EF Core\RepositoryPatternwithUOW\RepositoryPatternWithUOW.Core\obj\Debug\net8.0\RepositoryPatternWithUOW.Core.csproj.AssemblyReference.cache

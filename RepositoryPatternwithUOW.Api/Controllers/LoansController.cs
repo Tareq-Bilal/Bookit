@@ -1,22 +1,25 @@
 ﻿using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
 using RepositoryPatternwithUOW.Api.DTO_s.BookCopy;
 using RepositoryPatternwithUOW.Api.DTO_s.Loan;
+using RepositoryPatternwithUOW.Api.DTO_s.Transaction;
 using RepositoryPatternwithUOW.Api.Validators.BookCopy;
 using RepositoryPatternWithUOW.Core;
-using RepositoryPatternWithUOW.Core.Models;
 using RepositoryPatternWithUOW.Core.Constants;
-using System;
+using RepositoryPatternWithUOW.Core.Models;
 using RepositoryPatternWithUOW.EF;
-using RepositoryPatternwithUOW.Api.DTO_s.Transaction;
+using System;
 
 namespace RepositoryPatternwithUOW.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
+
     public class LoansController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;

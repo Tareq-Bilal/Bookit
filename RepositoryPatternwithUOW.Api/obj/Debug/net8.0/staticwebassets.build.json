@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "OBPB976nxYVzOsfO6gMOA6rxZBNrCWQI7yS2rxGyQvQ=",
-  "Source": "RepositoryPatternwithUOW.Api",
-  "BasePath": "_content/RepositoryPatternwithUOW.Api",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"OBPB976nxYVzOsfO6gMOA6rxZBNrCWQI7yS2rxGyQvQ=","Source":"RepositoryPatternwithUOW.Api","BasePath":"_content/RepositoryPatternwithUOW.Api","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

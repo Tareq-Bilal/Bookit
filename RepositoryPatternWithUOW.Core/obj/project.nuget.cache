@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "DQuqwKiq6qE=",
+  "dgSpecHash": "KKl5LAe7fd4=",
   "success": true,
-  "projectFilePath": "D:\\Repository Pattern Using EF Core\\RepositoryPatternWithUOW\\RepositoryPatternWithUOW.Core\\RepositoryPatternWithUOW.Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Repository Pattern Using EF Core\\RepositoryPatternwithUOW\\RepositoryPatternWithUOW.Core\\RepositoryPatternWithUOW.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tareq\\.nuget\\packages\\microsoft.bcl.timeprovider\\8.0.1\\microsoft.bcl.timeprovider.8.0.1.nupkg.sha512",
+    "C:\\Users\\tareq\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.1.2\\microsoft.identitymodel.abstractions.8.1.2.nupkg.sha512",
+    "C:\\Users\\tareq\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.1.2\\microsoft.identitymodel.jsonwebtokens.8.1.2.nupkg.sha512",
+    "C:\\Users\\tareq\\.nuget\\packages\\microsoft.identitymodel.logging\\8.1.2\\microsoft.identitymodel.logging.8.1.2.nupkg.sha512",
+    "C:\\Users\\tareq\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.1.2\\microsoft.identitymodel.tokens.8.1.2.nupkg.sha512",
+    "C:\\Users\\tareq\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.1.2\\system.identitymodel.tokens.jwt.8.1.2.nupkg.sha512"
+  ],
   "logs": []
 }

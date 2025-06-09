@@ -35,12 +35,16 @@ namespace RepositoryPatternWithUOW.EF.Repositories
         public async Task<T> FindAsync(Expression<Func<T, bool>> criteria, string[] includes = null)
         {
             IQueryable<T> query = _context.Set<T>();
-            
-            if (includes != null)
-                foreach(var include in includes)
-                    query = query.Include(include);
 
-            return await query.SingleOrDefaultAsync(criteria);
+            if (includes != null)
+            {
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
+            }
+
+            return await query.FirstOrDefaultAsync(criteria); ;
         }
 
         public IEnumerable<T> FindAll(string[] includes = null)
@@ -102,26 +106,7 @@ namespace RepositoryPatternWithUOW.EF.Repositories
             _context.Set<T>().AddAsync(entity);
             return entity;
         }
-        //public async Task<bool> ExistsAsync(int id)
-        //{
-        //    // Use AnyAsync which is more efficient for existence checks
-        //    // And crucially, ConfigureAwait(false) to avoid deadlocks
-        //    return await _context.Set<T>()
-        //        .AnyAsync(c => c. == id)
-        //        .ConfigureAwait(false);
-        //}
 
-        //public async Task<bool> ExistsAsync(string name)
-        //{
-        //    return await _context.Set<Category>()
-        //    .AnyAsync(c => c.Name == name);
-        //}
-
-        //public T Update(T entity)
-        //{
-        //    _context.Update(entity);
-        //    return entity;
-        //}
         public void Update(T entity)
         {
             // Just mark as modified, don't query the database

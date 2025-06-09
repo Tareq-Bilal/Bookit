@@ -8,11 +8,13 @@ using RepositoryPatternwithUOW.Api.DTO_s.Category;
 using Azure;
 using RepositoryPatternwithUOW.Api.DTO_s.Book;
 using static System.Reflection.Metadata.BlobBuilder;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RepositoryPatternwithUOW.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoryController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;

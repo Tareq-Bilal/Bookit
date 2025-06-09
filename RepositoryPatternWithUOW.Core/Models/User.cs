@@ -19,6 +19,9 @@ namespace RepositoryPatternWithUOW.Core.Models
         [MaxLength(200)]
         public string Email { get; set; }
         public DateOnly RegistrationDate { get; set; }
+
+        [Required]
+        public string PasswordHash { get; set; } // Changed from Password
         public bool IsActive { get; set; }
 
         // Navigation properties

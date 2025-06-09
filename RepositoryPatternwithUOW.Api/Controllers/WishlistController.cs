@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RepositoryPatternwithUOW.Api.DTO_s.Wishlist;
@@ -11,6 +12,8 @@ namespace RepositoryPatternwithUOW.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
+
     public class WishlistController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;

@@ -1,16 +1,19 @@
 ﻿using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using RepositoryPatternwithUOW.Api.DTO_s.Wishlist;
-using RepositoryPatternWithUOW.Core.Models;
-using RepositoryPatternWithUOW.Core;
 using RepositoryPatternwithUOW.Api.DTO_s.Review;
+using RepositoryPatternwithUOW.Api.DTO_s.Wishlist;
+using RepositoryPatternWithUOW.Core;
+using RepositoryPatternWithUOW.Core.Models;
 
 namespace RepositoryPatternwithUOW.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
+
     public class ReviewController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;

@@ -19,6 +19,7 @@ namespace RepositoryPatternwithUOW.Api.Validators.User
 
             RuleFor(x => x.Email)
                  .EmailAddress().WithMessage("Invalid email format");
+
         }
 
         private bool _IsUserNameTaken(string userName)

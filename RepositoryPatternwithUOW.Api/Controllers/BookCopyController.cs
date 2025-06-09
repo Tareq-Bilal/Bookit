@@ -1,18 +1,21 @@
 ﻿using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using RepositoryPatternwithUOW.Api.DTO_s.Book;
-using RepositoryPatternwithUOW.Api.DTO_s.Category;
-using RepositoryPatternWithUOW.Core.Models;
-using RepositoryPatternWithUOW.Core;
-using RepositoryPatternwithUOW.Api.DTO_s.BookCopy;
 using RepositoryPatternwithUOW.Api.DTO_s.Author;
+using RepositoryPatternwithUOW.Api.DTO_s.Book;
+using RepositoryPatternwithUOW.Api.DTO_s.BookCopy;
+using RepositoryPatternwithUOW.Api.DTO_s.Category;
+using RepositoryPatternWithUOW.Core;
+using RepositoryPatternWithUOW.Core.Models;
 
 namespace RepositoryPatternwithUOW.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
+
     public class BookCopyController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
