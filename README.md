@@ -34,7 +34,7 @@ Generate insights for collection development and library growth strategies.
 Bookit is built with a clean, maintainable architecture and modern .NET practices:
 
 - 🔄 **AutoMapper** – Streamlines object-to-object mapping (DTOs, ViewModels, etc.)
-- ✅ **FluentValidation** – Ensures robust and readable model validation
+- 🎯 **FluentValidation** – Ensures robust and readable model validation
 - 🏛 **Repository Pattern + Unit of Work** – Clean, testable, and decoupled data access logic
 - 🔐 **Authentication & Authorization** – Secure access with token-based (JWT) authentication and role-based access
 - 📊 **Serilog** – Structured logging with support for file, console, and external sinks
@@ -107,6 +107,26 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 ### 🔹User
 
 ![User](https://github.com/user-attachments/assets/45b0dbda-dc15-42ed-8d62-d90f3857aa55)
+
+### 🔹Loans
+
+![image](https://github.com/user-attachments/assets/4d895fdf-244d-4e2f-ae71-d49edab1aa22)
+
+### 🔹Transactoins
+
+![image](https://github.com/user-attachments/assets/726ed284-8253-41da-b098-dbfd50f541bf)
+
+### 🔹Wishlist
+
+![image](https://github.com/user-attachments/assets/50c231c7-c13d-474e-907c-db5dab6b712b)
+
+### 🔹Review
+
+![image](https://github.com/user-attachments/assets/eef92538-824d-4e82-9671-7e8cc125b353)
+
+## Database Diagram 📈
+
+![Bookit - Light](https://github.com/user-attachments/assets/47c443b0-afed-409e-9a38-ad75e44f50c2)
 
 
 ## Crafted with ❤️ by Tareq Bilal
